@@ -1,5 +1,6 @@
 import httpWarper from '@/httpWarper/index'
 import middlewares from '@/middleware/api.middleware'
+
 const api = httpWarper.create({
   baseUrl: 'https://api-bootcovides.herokuapp.com',
 })

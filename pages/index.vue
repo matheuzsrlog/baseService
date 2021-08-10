@@ -1,14 +1,19 @@
 <template>
-  <div></div>
+  <l-s-table>
+    <template #header>
+      <h1 @click="dalhe">Teste</h1>
+    </template>
+  </l-s-table>
 </template>
 
 <script>
-import api from '@/service/api'
 export default {
-  async mounted() {
-    const response = await api.get('information/last')
-    debugger
+  methods: {
+    dalhe() {
+      alert('oioi')
+    },
   },
 }
 </script>
-/information/last
+
+<style></style>
